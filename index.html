@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<title>Royal RP | Central de Criadores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+ <div class="container topbar">
+  <a class="logo" href="#inicio">ROYAL<span>RP</span></a>
+  <nav aria-label="Navegação principal">
+   <a class="navlink active" href="#inicio">Início</a>
+   <a class="navlink" href="#criadores">Criadores</a>
+   <a class="navlink" href="#inscricao">Inscrição</a>
+   <a class="navlink" href="#recompensas">Recompensas</a>\n   <a class="navlink" href="#programa">Regras</a>
+   <a class="navlink" href="#admin">Administração</a>
+  </nav>
+ </div>
+</header>
+
+<main class="container">
+<section class="hero" id="inicio">
+ <div>
+  <div class="kicker">PORTAL DEMONSTRATIVO • CRIADORES DE CONTEÚDO</div>
+  <h1>Faça parte da história.<br><span class="gradient">Mostre a Royal RP.</span></h1>
+  <p class="lead">Um espaço para reunir streamers, divulgar transmissões e organizar as inscrições do programa de criadores da Royal RP. A proposta é valorizar quem divulga a cidade com regras claras e respeito a toda a comunidade.</p>
+  <div class="actions"><a class="btn" href="#inscricao">Quero me inscrever</a><a class="btn ghost" href="#criadores">Conhecer criadores</a></div>
+  <div class="stats">
+   <div class="stat"><strong id="statCreators">0</strong><span>Criadores aprovados</span></div>
+   <div class="stat"><strong id="statPending">0</strong><span>Inscrições em análise</span></div>
+   <div class="stat"><strong>100%</strong><span>Projeto demonstrativo</span></div>
+  </div>
+ </div>
+ <aside class="hero-panel">
+  <div><div class="hero-symbol">📡</div><h2>Conteúdo que conecta a cidade.</h2><p>Cadastre seu canal, compartilhe suas transmissões e acompanhe as novidades do programa de criadores.</p></div>
+  <span class="pill"><i class="dot"></i> Programa em fase de avaliação</span>
+ </aside>
+</section>
+
+<section id="criadores">
+ <div class="sectionhead"><div><div class="kicker">Comunidade</div><h2>Criadores da Royal</h2><p class="sectiondesc">Perfis aprovados pela administração aparecerão nesta área.</p></div></div>
+ <div class="cards" id="creatorCards"><div class="empty">Ainda não há criadores aprovados para exibir.<br>Quando uma inscrição for aprovada no painel demonstrativo, o perfil aparecerá aqui.</div></div>
+</section>
+
+<section id="programa">
+ <div class="kicker">Organização e transparência</div><h2>Como funciona o programa</h2>
+ <p class="sectiondesc" style="max-width:760px;margin-bottom:22px">A proposta é criar um processo claro para quem deseja produzir conteúdo sobre a cidade.</p>
+ <div class="grid2">
+  <article class="info"><div class="ico">📝</div><h3>01 — Inscrição</h3><p>O criador informa seu personagem, plataforma, canal e frequência prevista de transmissões.</p></article>
+  <article class="info"><div class="ico">🔎</div><h3>02 — Avaliação</h3><p>A equipe analisa as inscrições usando critérios divulgados e aplicados de maneira consistente.</p></article>
+  <article class="info"><div class="ico">📅</div><h3>03 — Acompanhamento</h3><p>As atividades podem ser registradas por período, com links das transmissões e observações da equipe.</p></article>
+  <article class="info"><div class="ico">🤝</div><h3>04 — Reconhecimento</h3><p>Possíveis benefícios serão definidos após avaliação. Fazer live não será obrigatório para jogar nem dará privilégios injustos no RP.</p></article>
+ </div>
+ <div class="notice"><strong>Aviso:</strong> este é um protótipo para apresentar e testar a ideia. O programa, os critérios, as categorias e quaisquer benefícios ou recompensas ainda não são oficiais e dependem da aprovação da administração. Enviar uma inscrição não garante aprovação ou pagamento.</div>
+</section>
+
+
+<section id="recompensas">
+ <div class="kicker">Reconhecimento da comunidade</div>
+ <h2>Recompensas e benefícios</h2>
+ <p class="sectiondesc" style="max-width:760px;margin-bottom:22px">Ideias em avaliação para possíveis reconhecimentos. Nenhum benefício está aprovado ou garantido neste protótipo.</p>
+ <div class="grid2">
+  <article class="info"><div class="ico">📣</div><h3>Divulgação</h3><p>Possibilidade de divulgar canais e transmissões nos espaços oficiais da comunidade, conforme regras futuras.</p></article>
+  <article class="info"><div class="ico">🎁</div><h3>Reconhecimento</h3><p>Possíveis destaques para criadores ativos, com critérios transparentes e iguais para todos.</p></article>
+  <article class="info"><div class="ico">⭐</div><h3>Categorias</h3><p>Faixas demonstrativas: Iniciante, Ativo e Destaque, sujeitas à avaliação da equipe.</p></article>
+  <article class="info"><div class="ico">🤝</div><h3>Parcerias</h3><p>Ideias de ações e eventos com criadores, sem conceder vantagem injusta dentro do roleplay.</p></article>
+ </div>
+</section>
+\n<section id="inscricao">
+ <div class="formlayout">
+  <div><div class="kicker">Participe</div><h2>Inscrição de criador</h2><p class="sectiondesc">Preencha os dados públicos do seu canal. A inscrição ficará registrada apenas neste navegador nesta versão de demonstração.</p><div class="notice">Não informe senhas, documentos, dados bancários ou informações privadas. Envie somente links públicos do seu conteúdo.</div></div>
+  <form class="formbox" id="registrationForm">
+   <h3>Ficha de inscrição</h3><p class="muted" style="font-size:12px;margin:5px 0 12px">Campos com * são obrigatórios.</p>
+   <div class="formgrid">
+    <div><label for="character">Nome do personagem *</label><input id="character" maxlength="50" required placeholder="Ex.: João Silva"></div>
+    <div><label for="creator">Nome do criador *</label><input id="creator" maxlength="50" required placeholder="Seu nome ou apelido"></div>
+    <div><label for="platform">Plataforma principal *</label><select id="platform" required><option value="">Selecione</option><option>Twitch</option><option>YouTube</option><option>TikTok</option><option>Kick</option><option>Outra</option></select></div>
+    <div><label for="frequency">Frequência prevista *</label><select id="frequency" required><option value="">Selecione</option><option>1 transmissão por semana</option><option>2 a 3 transmissões por semana</option><option>4 ou mais por semana</option><option>Agenda variável</option></select></div>
+    <div class="span2"><label for="channel">Link do canal *</label><input id="channel" type="url" required placeholder="https://..."></div>
+    <div class="span2"><label for="schedule">Dias ou horários habituais</label><input id="schedule" maxlength="100" placeholder="Ex.: terça e quinta, à noite"></div>
+    <div class="span2"><label for="about">Apresentação do conteúdo</label><textarea id="about" maxlength="500" placeholder="Conte que tipo de conteúdo pretende produzir na Royal RP."></textarea></div>
+   </div>
+   <button class="btn" style="width:100%;margin-top:18px" type="submit">Enviar inscrição demonstrativa</button>
+   <div class="success" id="formMessage" role="status"></div>
+   <p class="help">Protótipo local: os dados ficam salvos no armazenamento deste navegador. Não são enviados para um servidor nem ficam disponíveis em outros computadores.</p>
+  </form>
+ </div>
+</section>
+
+<section id="admin">
+ <div class="kicker">Ferramentas de gestão</div><h2>Painel administrativo demonstrativo</h2>
+ <p class="sectiondesc">Use esta área para testar a organização das inscrições neste computador.</p>
+ <div class="notice"><strong>Importante:</strong> este painel não tem autenticação e não é seguro para uso público. Qualquer pessoa que abra este arquivo pode visualizar e alterar os dados locais. Para uso real, será necessário criar acesso administrativo protegido e banco de dados em servidor.</div>
+ <div class="adminbox" style="margin-top:17px">
+  <div class="sectionhead" style="margin-bottom:10px"><div><h3>Inscrições recebidas</h3><p class="muted" style="font-size:12px">Gerencie os registros salvos neste navegador.</p></div><span class="pill">Modo demonstração</span></div>
+  <div class="admin-tools">
+   <input id="searchInput" style="max-width:230px" placeholder="Buscar criador ou personagem">
+   <select id="statusFilter" style="max-width:180px"><option value="all">Todos os status</option><option value="Pendente">Pendentes</option><option value="Aprovado">Aprovados</option><option value="Recusado">Recusados</option></select>
+   <button class="btn ghost small" id="exportBtn" type="button">Exportar CSV</button>
+   <button class="btn danger small" id="clearBtn" type="button">Apagar registros</button>
+  </div>
+  <div class="admin-table-wrap"><table><thead><tr><th>Criador / personagem</th><th>Plataforma</th><th>Frequência</th><th>Data</th><th>Status</th><th>Ações</th></tr></thead><tbody id="adminRows"><tr><td colspan="6" class="muted">Nenhuma inscrição registrada.</td></tr></tbody></table></div>
+  <p class="help">Aprovar aqui serve apenas para demonstrar o fluxo. Não representa aprovação oficial da Royal RP.</p>
+ </div>
+</section>
+</main>
+
+<footer><div class="container"><span><strong>ROYAL RP</strong> • Central de Criadores</span><span>Protótipo de apresentação • Não oficial</span></div></footer>
+
+<script src="script.js" defer></script></body>
+</html>
